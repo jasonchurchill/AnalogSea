@@ -2,10 +2,21 @@
 <html>
 <head>
 	<title>AnalogSea</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+	<img class="logo" src="logo.png" alt="AnalogSea Logo"/>
+	<form class="signup-form" action="/signup" accept-charset="utf-8" method="post">
+		<legend>Sign up</legend>
+		<label for="user-email">Email</label>
+		<input type="email" placeholder="foo@bar.com" name="user-email" id="user_email" required/>
+		<label for="user-password">Password</label>
+		<input type="password" placeholder="1234passw0rd" label="false" name="user-password" id="user-password" required/>
+		<button type="submit"/>Sign up</button>
+		<p><a href="/forgot_password/new">Forgot password</a></p>
+	</form>
+	 <div class='footer'>
+    <p>Already have an account? <a href="/login">Log in</a></p>
+  </div>
 </body>
 </html>
